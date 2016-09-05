@@ -38,5 +38,10 @@ if (!empty($_GET)) {
       $dataToReturn[] = $pageObject;
     }
   }
-  echo json_encode($dataToReturn);
+
+  if (isset($_GET['reencode'])) {
+    echo json_encode($dataToReturn, JSON_UNESCAPED_UNICODE);
+  } else {
+    echo json_encode($dataToReturn);
+  }
 }
