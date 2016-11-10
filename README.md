@@ -11,23 +11,33 @@ http://tools.wmflabs.org/articles-by-lat-lon-without-images/index.php
 
 **Required parameters**
 
-- `wiki` defines the Wikipedia instance to connect to(defined by language code).
-- `lat` the latitude of the search center.
-- `lon` the longitude of the search center.
-- `radius` the radius to search within(specified in meters).
+ - `wiki` defines the Wikipedia instance to connect to(defined by language code).
+ - `lat` the latitude of the search center.
+ - `lon` the longitude of the search center.
+ - `radius` the radius to search within(specified in meters).
 
 **Example**
- 
- ```
- http://tools.wmflabs.org/articles-by-lat-lon-without-images/index.php?wiki=sv&lat=59.06708056&lon=16.36239722&radius=10000
- ```
- 
+
+```
+http://tools.wmflabs.org/articles-by-lat-lon-without-images/index.php?wiki=sv&lat=59.06708056&lon=16.36239722&radius=10000
+```
+
 **Optional parameters**
 
  - `reencode=true` reencodes non-ascii characters(this differs from the Mediawiki API).
 
 **Example**
- 
- ```
- http://tools.wmflabs.org/articles-by-lat-lon-without-images/index.php?wiki=sv&lat=59.06708056&lon=16.36239722&radius=10000&reencode=true
- ```
+
+```
+http://tools.wmflabs.org/articles-by-lat-lon-without-images/index.php?wiki=sv&lat=59.06708056&lon=16.36239722&radius=10000&reencode=true
+```
+
+**Wikidata**
+
+To fetch Wikidata items without images replace the Wikipedia language code with `wikidata`.
+
+**Example**
+
+```
+http://tools.wmflabs.org/articles-by-lat-lon-without-images/index.php?wiki=wikidata&lat=58.1&lon=16.1&radius=1500
+```
