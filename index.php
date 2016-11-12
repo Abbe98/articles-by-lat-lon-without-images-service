@@ -53,7 +53,7 @@ if (!empty($_GET)) {
       preg_match('/\d+$/', $item->item->value, $uriMatch);
       $itemObject['id'] = intval($uriMatch[0]);
       $itemObject['title'] = $item->label->value;
-      preg_match_all('/\d+\.\d+/', $item->location->value, $lonlat);
+      preg_match_all('/((-)|())\d+\.\d+/', $item->location->value, $lonlat);
       $itemObject['lat'] = floatval($lonlat[0][1]);
       $itemObject['lon'] = floatval($lonlat[0][0]);
       $dataToReturn[] = $itemObject;
