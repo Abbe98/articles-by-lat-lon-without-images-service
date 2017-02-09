@@ -2,6 +2,8 @@
 
 This API allows you to return a list of articles within a geographic radius that does not contain any valuable images. Images such as icons and files included from templates etc are ignored. All Wikipedias are supported. The API follows the same scheme as the official API, incompatible features is available through optional parameters.
 
+Sage Ross made a Pepple watchface with this API you should [check it out](http://ragesoss.com/blog/2016/11/05/diderot-a-pebble-watchface-for-finding-nearby-unillustrated-wikipedia-articles/).
+
 # Usage
 
 **API endpoint**
